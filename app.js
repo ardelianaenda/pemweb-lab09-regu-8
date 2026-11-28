@@ -7,6 +7,7 @@ app.use(express.json());
 
 // Rute Beranda Utama
 app.get('/', (req, res) => {
+    throw new Error('Simulasi Bug Produksi');
     res.json({
         aplikasi: process.env.APP_NAME || 'Portal Katalog TI',
         status: 'Server Aktif',
